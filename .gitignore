@@ -2,4 +2,4 @@
 /public/build/
 .git
 .DS_Store
-.idea
+.idea/
