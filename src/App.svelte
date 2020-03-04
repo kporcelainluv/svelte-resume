@@ -46,37 +46,47 @@
 
   const projects = [
     {
-      name: "HTML Academy, HTML/CSS 1",
-      link: "https://github.com/kporcelainluv/226838-device",
-      desc: "Introduction to HTML and CSS project. "
-    },
-    {
-      name: "HTML Academy, HTML/CSS 2",
-      link: "https://github.com/kporcelainluv/226838-sedona-17",
-      desc: "HTML/SASS project. Uses Gulp and BAM."
-    },
-    {
-      name: "HTML Academy, JS 2",
-      link: "https://github.com/kporcelainluv/226838-cinemaddict-10",
+      name: "Device",
+      link: "https://226838-device.now.sh/",
+      github: "https://github.com/kporcelainluv/226838-device",
       desc:
-        "Object-oriented programming project. Moowle website fetches favorite films from server and displays to user. Favorite films, history, statistics pages are available."
+        "Gadget online store Device. Final project at HTML Academy, HTML/CSS 1"
     },
     {
-      name: "Cinemaddict project in React.js",
-      link: "https://github.com/kporcelainluv/cinemaddict-react-app",
-      desc: "Project written with React state."
-    },
-    {
-      name: "Questionary project in React.js",
-      link: "https://github.com/kporcelainluv/questionaryProject",
+      name: "Sedona",
+      link: "https://kporcelainluv.github.io/226838-sedona-17/build/",
+      github: "https://github.com/kporcelainluv/226838-sedona-17",
       desc:
-        "Questionary made for business to gather data. Has a list of users and user profile avaliable for whitelist users. Uses Firebase to save data. Connected to Telegram bot."
+        "Arizona Tourist Campus Site. Final project at HTML Academy, HTML/CSS 2"
+    },
+    {
+      name: "Cinemaddict",
+      link: "https://226838-cinemaddict-10.now.sh/",
+      github: "https://github.com/kporcelainluv/226838-cinemaddict-10",
+      desc:
+        "Service for fans of movies.Final project at HTML Academy, Javascript 2"
+    },
+    {
+      name: "Cinemaddict in React.js",
+      link: "https://cinemaddict-react-app.now.sh/",
+      github: "https://github.com/kporcelainluv/cinemaddict-react-app",
+      desc: "Service for fans of movies rewritten in React.js."
+    },
+    {
+      name: "Questionary",
+      link: "https://zhukovairina.now.sh/",
+      github: "https://github.com/kporcelainluv/questionaryProject",
+      desc: `An app that I've built for my mom in React.js.
+        She has a need to collect data from clients before the lessons she holds.
+        The app has a list of users and user profile available for whitelist users.
+        Uses Firebase to save data. Connected to Telegram bot.`,
+      screenshots: true
     },
     {
       name: "React exercises",
-      link: "https://github.com/kporcelainluv/react-practice",
-      desc:
-        "Simple projects in React.js like To-do list, Counter, Fetch API, Current time"
+      link: "https://react-practice.now.sh/",
+      github: "https://github.com/kporcelainluv/react-practice",
+      desc: "In that project I solved simple tasks while learning React."
     }
   ];
 </script>
@@ -90,7 +100,7 @@
     align-items: center;
     flex-direction: column;
     padding: 32px;
-    font-family: "Raleway", Roboto, sans-serif;
+    font-family: "Helvetica Neue", sans-serif;
     font-size: 18px;
     line-height: 32px;
     color: #181919;
@@ -115,10 +125,14 @@
   .main {
     width: 400px;
   }
+  h1 {
+    margin-bottom: 8px;
+  }
   h2 {
     margin: 0 0 8px;
   }
   h3 {
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 0;
   }
