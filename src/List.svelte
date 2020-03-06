@@ -4,26 +4,22 @@
 
 <style>
   a {
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    font-family: "Helvetica Neue", sans-serif;
     text-decoration: none;
+    color: #242535;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin: 0 0 0 8px;
   }
   a:hover {
-    color: #92d2f9;
-    border-bottom: 1px solid #92d2f9;
+    border-bottom: 1px solid #242535;
   }
   a:focus {
-    color: #92d2f9;
-    border-bottom: 1px solid #92d2f9;
+    border-bottom: 1px solid #242535;
   }
   ul {
     margin-top: 8px;
   }
   li {
-    margin: 0 0 8px 0;
+    margin: 0 0 4px 0;
   }
 </style>
 
