@@ -11,6 +11,7 @@
     color: #242535;
     text-decoration: none;
     font-size: 18px;
+    margin-bottom: 16px;
   }
   .block {
     list-style-type: none;

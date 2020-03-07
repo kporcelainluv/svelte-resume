@@ -1,7 +1,8 @@
 <script>
   import List from "./List.svelte";
   import Projects from "./Projects.svelte";
-  import Portfolio from "./Portfolio.svelte";
+  import Certificates from "./Certificates.svelte";
+  import Hand from "./Hand.svelte";
 
   const avatar = "./static/avatar.jpg";
   const html1 = "./static/html1.pdf";
@@ -14,6 +15,10 @@
   const freecodecamp =
     "https://www.freecodecamp.org/certification/kporcelainluv/javascript-algorithms-and-data-structures";
   const algorithmicToolbox = "./static/algorithmic_toolbox1.pdf";
+  const jquery = "./static/jquery.png";
+  const udacityHtml = "./static/udacityHtml.png";
+  const udacityPython = "./static/UdacityPython.png";
+  const devman = "./static/devman.png";
   const skills = [
     "Responsive HTML/CSS",
     "SASS",
@@ -30,18 +35,53 @@
   ];
 
   const courses = {
+    Algorithms: [
+      {
+        name: "JS Algorithms and Data Structures",
+        link: freecodecamp,
+        year: "2019",
+        company: "FreeCodeCamp"
+      },
+      {
+        name: "Algorithmic Toolbox part 1",
+        link: algorithmicToolbox,
+        year: "2019",
+        company: "Coursera"
+      }
+    ],
+    Javascript: [
+      {
+        name: "JavaScript level 2",
+        link: js2,
+        year: "2020",
+        company: "HTML Academy"
+      },
+      {
+        name: "Intro to jQuery",
+        link: jquery,
+        year: "2017",
+        company: "Udacity"
+      }
+    ],
     "HTML&CSS": [
       {
-        name: "HTML/CSS 1",
-        link: html1,
+        name: "HTML/CSS level 2",
+        link: html2,
         year: "2019",
         company: "HTML Academy"
       },
       {
-        name: "HTML/CSS 2",
-        link: html2,
+        name: "HTML/CSS level 1",
+        link: html1,
         year: "2019",
         company: "HTML Academy"
+      },
+
+      {
+        name: "Intro to HTML&CSS",
+        link: udacityHtml,
+        year: "2017",
+        company: "Udacity"
       },
       {
         name: "Web-development for beginners",
@@ -50,20 +90,7 @@
         company: "Loftschool"
       }
     ],
-    Javascript: [
-      {
-        name: "JavaScript 2",
-        link: js2,
-        year: "2020",
-        company: "HTML Academy"
-      },
-      {
-        name: "JS Algorithms and Data Structures",
-        link: freecodecamp,
-        year: "2019",
-        company: "FreeCodeCamp"
-      }
-    ],
+
     React: [
       {
         name: "Modern React with Redux",
@@ -79,21 +106,7 @@
       }
     ],
 
-    Algorithms: [
-      {
-        name: "Algorithmic Toolbox part 1",
-        link: algorithmicToolbox,
-        year: "2019",
-        company: "Coursera"
-      }
-    ],
     Python: [
-      {
-        name: "Introduction to Python",
-        link: coursera1,
-        year: "2018",
-        company: "Coursera"
-      },
       {
         name: "Diving into Python",
         link: coursera2,
@@ -105,6 +118,24 @@
         link: stepic,
         year: "2018",
         company: "Stepik.org"
+      },
+      {
+        name: "Introduction to Python",
+        link: coursera1,
+        year: "2018",
+        company: "Coursera"
+      },
+      {
+        name: "Devman problems",
+        link: devman,
+        year: "2017",
+        company: "Devman"
+      },
+      {
+        name: "Programming foundations with Python",
+        link: udacityPython,
+        year: "2017",
+        company: "Udacity"
       }
     ]
   };
@@ -203,12 +234,9 @@
     margin: 0 0 8px;
   }
   h3 {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
-    margin-bottom: 0;
-  }
-  ul {
-    margin-top: 8px;
+    margin: 28px 0 14px;
   }
   @media (max-width: 500px) {
     container {
@@ -236,6 +264,7 @@
         width="120"
         height="120"
         alt="Xenia Zhukova's photo" />
+      <Hand />
     </div>
 
     <div class="centered">
@@ -260,7 +289,7 @@
     </block>
     <block>
       <h3>Certificates</h3>
-      <Portfolio {courses} />
+      <Certificates {courses} />
     </block>
   </div>
 </container>
