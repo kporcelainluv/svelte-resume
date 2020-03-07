@@ -5,7 +5,7 @@
 <style>
   svg {
     fill: rgba(0, 0, 0, 0.7);
-    padding-left: 4px;
+    margin-right: 4px;
     height: 12px;
     width: 12px;
   }

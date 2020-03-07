@@ -124,7 +124,7 @@
       github: "https://github.com/kporcelainluv/226838-sedona-17",
       desc:
         "Arizona Tourist Campus Site. Final project at HTML Academy, HTML/CSS 2",
-      tags: ["HTML", "BEM", "SASS", "Gulp", "Adaptive Css"]
+      tags: ["HTML", "BEM", "SASS", "Gulp", "Adaptive CSS"]
     },
     {
       name: "Cinemaddict",
@@ -132,15 +132,7 @@
       github: "https://github.com/kporcelainluv/226838-cinemaddict-10",
       desc:
         "Service for fans of movies. Final project at HTML Academy, Javascript 2",
-      tags: [
-        "JS",
-        "ES 6",
-        "Webpack",
-        "OOP",
-        "Rest",
-        "Local storage",
-        "Service Workers"
-      ]
+      tags: ["JS", "ES2016", "Webpack", "OOP", "Rest", "Service Worker"]
     },
     {
       name: "Cinemaddict in React.js",
