@@ -31,7 +31,9 @@
     margin-bottom: 8px;
   }
   .tags {
-    line-height: 24px;
+    line-height: 16px;
+    font-weight: 500;
+    font-style: italic;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -85,7 +87,7 @@
       {#if project.tags}
         <ul class="tags">
           {#each project.tags as tag}
-            <li class="tag">#{tag}</li>
+            <li class="tag">{tag}</li>
           {/each}
         </ul>
       {/if}
