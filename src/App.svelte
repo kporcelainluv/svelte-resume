@@ -185,6 +185,13 @@
       link: "https://react-practice.now.sh/",
       github: "https://github.com/kporcelainluv/react-practice",
       desc: "In that project I solved simple tasks while learning React."
+    },
+    {
+      name: "Doctors' Alliance",
+      link: "https://fbk-test.zhukovaxenia.now.sh/",
+      github: "https://github.com/kporcelainluv/fbk-test",
+      desc: "A test project done for FBK in React.js",
+      tags: ["React", "styled-components", "Adaptive CSS"]
     }
   ];
 </script>
