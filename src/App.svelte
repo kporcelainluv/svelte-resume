@@ -36,8 +36,9 @@
     { name: "zhukovaksusha@gmail.com", link: "mailto:zhukovaksusha@gmail.com" }]
 
   const jobs = [
-    {name: "SGSDT", from: 'May 2020', to: 'Present', position: 'Junior front-end developer', 
-      description: 'Develop and design new features. Support existing web applications for a clinic network'
+    {name: "SGSDT", from: 'May 2020', to: 'Present', position: 'Front-end developer', 
+      description: ['Prototyping using Figma', 'Building new features', 'Maintaining legacy code', ],
+      tags: ['TypeScript', 'SASS', 'Redux', 'Antd', 'Formik', 'Yup']
     },
   ];
 
