@@ -25,7 +25,8 @@
     "Javascript",
     "React/Redux",
     "Firebase",
-    "Styled components"
+    "Styled components",
+    'TypeScript'
   ];
 
   const social = [
