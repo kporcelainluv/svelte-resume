@@ -99,6 +99,12 @@
 
     React: [
       {
+        name: "EpicReact",
+        link: "",
+        year: "2020",
+        company: "Kent C.Dodds course at epicreact.dev"
+      },
+      {
         name: "Modern React with Redux",
         link: "",
         year: "2020",
