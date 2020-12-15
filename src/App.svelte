@@ -32,7 +32,12 @@
   const social = [
     { name: "Github", link: "https://github.com/kporcelainluv" },
     { name: "Telegram", link: "https://t.me/ksushaz" },
-    { name: "zhukovaksusha@gmail.com", link: "mailto:zhukovaksusha@gmail.com" }
+    { name: "zhukovaksusha@gmail.com", link: "mailto:zhukovaksusha@gmail.com" }]
+
+  const jobs = [
+    {name: "SGSDT", from: 'May 2020', to: 'Present', position: 'Junior front-end developer', 
+      description: 'Develop and design new features. Support existing web applications for a clinic network'
+    },
   ];
 
   const courses = {
