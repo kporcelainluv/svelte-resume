@@ -3,6 +3,7 @@
   import Projects from "./Projects.svelte";
   import Certificates from "./Certificates.svelte";
   import Hand from "./Hand.svelte";
+  import WorkExperience from "./WorkExperience.svelte";
 
   const avatar = "./static/avatar.jpg";
   const html1 = "./static/html1.pdf";
@@ -301,6 +302,10 @@
           <li>{skill}</li>
         {/each}
       </ul>
+    </block>
+    <block>
+      <h3>Employment history</h3>
+      <WorkExperience {jobs} />
     </block>
     <block>
       <h3>Projects</h3>
