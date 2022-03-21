@@ -20,6 +20,7 @@
   const udacityHtml = "./static/udacityHtml.png";
   const udacityPython = "./static/UdacityPython.png";
   const devman = "./static/devman.png";
+  const bbeCertificate = './static/bbe.png';
   const skills = [
     "Responsive HTML/CSS",
     "SASS",
@@ -27,7 +28,11 @@
     "React/Redux",
     "Firebase",
     "Styled components",
-    'TypeScript'
+    'TypeScript', 
+    'ESLint, Prettier',
+    'Git',
+    'Figma',
+    'Miro'
   ];
 
   const social = [
@@ -36,13 +41,19 @@
     { name: "zhukovaksusha@gmail.com", link: "mailto:zhukovaksusha@gmail.com" }]
 
   const jobs = [
-    {name: "SGSDT", from: 'May 2020', to: 'Present', position: 'Front-end developer', 
-      description: ['Prototyping using Figma', 'Building new features', 'Maintaining legacy code', ],
-      tags: ['TypeScript', 'SASS', 'Redux', 'Antd', 'Formik', 'Yup']
+    {name: "SGSDT", from: 'May 2020', to: 'September 2021', position: 'Front-end developer', 
+      description: ['Managed front-end development in the company\'s enterprise-wide software for pet crematories Wings (https://wingstracker.com). I maintained and refactored legacy code, built new features, prototyped and designed pages using Figma.', ],
+      tags: ['React', 'React-router', 'TypeScript','SASS', 'Redux', 'Antd', 'Formik', 'Yup']
     },
   ];
 
   const courses = {
+   'UX/UI Design': [{
+     name: "UX/UI: Digital product design",
+     link: bbeCertificate,
+     year: "2021",
+     company: "BangBang Education (BBE)"
+   }],
     Algorithms: [
       {
         name: "JS Algorithms and Data Structures",
@@ -69,6 +80,16 @@
         link: jquery,
         year: "2017",
         company: "Udacity"
+      }, {
+        name: "Asynchronous programming in JS",
+        link: '',
+        year: "2022",
+        company: "Hexlet"
+      } ,{
+        name: "Introduction to OOP in JS",
+        link: '',
+        year: "2022",
+        company: "Hexlet"
       }
     ],
     "HTML&CSS": [
@@ -103,7 +124,7 @@
       {
         name: "EpicReact",
         link: "",
-        year: "2020",
+        year: "2021 - present",
         company: "Kent C.Dodds course at epicreact.dev"
       },
       {
@@ -246,19 +267,29 @@
     text-align: center;
   }
   .main {
-    width: 400px;
+    width: 375px;
   }
   h1 {
     margin-bottom: 8px;
   }
   h2 {
     margin: 0 0 8px;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-weight: 400;
+  }
+  h2 span {
+    display: block;
   }
   h3 {
-    font-size: 22px;
+    font-size: 1em;
     font-weight: bold;
-    margin: 28px 0 14px;
+    margin: 32px 0 0;
   }
+  ul {
+    margin-top: 8px;
+  }
+  
   @media (max-width: 500px) {
     container {
       font-size: 16px;
@@ -290,7 +321,10 @@
 
     <div class="centered">
       <h1>Xenia Zhukova</h1>
-      <h2>Front-end developer</h2>
+      <h2>
+        <span>Front-end developer</span>
+        <span> & product designer</span>
+        </h2>
     </div>
     <block>
       <h3>Social</h3>
