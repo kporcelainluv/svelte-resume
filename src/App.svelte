@@ -43,7 +43,7 @@
   const jobs = [
     {name: "SGSDT", from: 'May 2020', to: 'September 2021', position: 'Front-end developer', 
       description: ['Managed front-end development in the company\'s enterprise-wide software for pet crematories Wings (https://wingstracker.com). I maintained and refactored legacy code, built new features, prototyped and designed pages using Figma.', ],
-      tags: ['React', 'React-router', 'TypeScript','SASS', 'Redux', 'Antd', 'Formik', 'Yup']
+      tags: ['React', 'TypeScript','SASS', 'Redux', 'Antd', 'Formik']
     },
   ];
 
