@@ -22,14 +22,17 @@
   const devman = "./static/devman.png";
   const bbeCertificate = './static/bbe.png';
   const skills = [
-    "Responsive HTML/CSS",
-    "SASS",
-    "Javascript",
-    "React/Redux",
+    'Javascript',
+    "React",
+    'TypeScript',
+    'Storybook',
+    'Jest',
+    "HTML/CSS",
+
+
     "Firebase",
     "Styled components",
-    'TypeScript', 
-    'ESLint, Prettier',
+
     'Git',
     'Figma',
     'Miro'
@@ -37,13 +40,24 @@
 
   const social = [
     { name: "Github", link: "https://github.com/kporcelainluv" },
-    { name: "Telegram", link: "https://t.me/ksushaz" },
+    { name: "Behance", link: "https://t.me/ksushaz" },
+    { name: "Telegram", link: "https://www.behance.net/kseniaz1" },
     { name: "zhukovaksusha@gmail.com", link: "mailto:zhukovaksusha@gmail.com" }]
 
   const jobs = [
+    {name: "Mediafellows", from: 'April 2022', to: 'Present', position: 'Front-end developer',
+      description: ['- Developed and tested software applications; ',
+      '- Worked closely with the Design team, discussed possible corner cases and improvements;',
+        '- Introduced and developed Storybook to organize the UI system;',
+        '- Worked as a part of a 7-person team;'],
+      tags: ['React', 'TypeScript', 'Mobx', 'Jest', 'CSS Modules', 'Storybook']
+    },
     {name: "SGSDT", from: 'May 2020', to: 'September 2021', position: 'Front-end developer', 
-      description: ['Managed front-end development in the company\'s enterprise-wide software for pet crematories Wings (https://wingstracker.com). I maintained and refactored legacy code, built new features, prototyped and designed pages using Figma.', ],
-      tags: ['React', 'TypeScript','SASS', 'Redux', 'Antd', 'Formik']
+      description: ['- Developed functional components and refactored legacy code;',
+      '- Developed UI / UX design for several pages, which simplified UX according to hallway testing;',
+      '- Teamed up with clients to understand the need for new features and functionality improvement;',
+      '- Worked as a part of a 3-person team; '],
+      tags: ['React', 'TypeScript', 'Formik', 'Redux', 'SASS', 'Antd']
     },
   ];
 
@@ -124,7 +138,7 @@
       {
         name: "EpicReact",
         link: "",
-        year: "2021 - present",
+        year: "2022 - present",
         company: "Kent C.Dodds course at epicreact.dev"
       },
       {
@@ -177,7 +191,7 @@
 
   const projects = [
     {
-      name: "Device",
+      name: "Device - 2019",
       link: "https://226838-device.now.sh/",
       github: "https://github.com/kporcelainluv/226838-device",
       desc:
@@ -185,7 +199,7 @@
       tags: ["HTML", "CSS", "Pixel-perfect"]
     },
     {
-      name: "Sedona",
+      name: "Sedona - 2019",
       link: "https://kporcelainluv.github.io/226838-sedona-17/build/",
       github: "https://github.com/kporcelainluv/226838-sedona-17",
       desc:
@@ -193,7 +207,7 @@
       tags: ["HTML", "BEM", "SASS", "Gulp", "Adaptive CSS"]
     },
     {
-      name: "Cinemaddict",
+      name: "Cinemaddict - 2019",
       link: "https://226838-cinemaddict-10.now.sh/",
       github: "https://github.com/kporcelainluv/226838-cinemaddict-10",
       desc:
@@ -201,13 +215,13 @@
       tags: ["JS", "ES2016", "Webpack", "OOP", "Rest", "Service Worker"]
     },
     {
-      name: "Cinemaddict in React.js",
+      name: "Cinemaddict in React.js - 2020",
       link: "https://cinemaddict-react-app.now.sh/",
       github: "https://github.com/kporcelainluv/cinemaddict-react-app",
       desc: "Service for fans of movies rewritten in React.js."
     },
     {
-      name: "Questionary",
+      name: "Questionary - 2020",
       link: "https://zhukovairina.now.sh/",
       github: "https://github.com/kporcelainluv/questionaryProject",
       desc: `An app that I've built for my mom in React.js.
@@ -216,17 +230,25 @@
       tags: ["React", "Firebase", "Telegram API"]
     },
     {
-      name: "React exercises",
+      name: "React exercises - 2020",
       link: "https://react-practice.now.sh/",
       github: "https://github.com/kporcelainluv/react-practice",
       desc: "In that project I solved simple tasks while learning React."
     },
     {
-      name: "Doctors' Alliance",
+      name: "Doctors' Alliance - 2020",
       link: "https://fbk-test.zhukovaxenia.now.sh/",
       github: "https://github.com/kporcelainluv/fbk-test",
       desc: "A test project done for FBK in React.js",
       tags: ["React", "styled-components", "Adaptive CSS"]
+    },
+    {
+      name: "Smart Home App UI/UX Prototype - 2021",
+      link: "https://www.behance.net/gallery/143961221/Smart-home-app",
+      github: null,
+      desc: "The app helps tenants to interact with the developer,  management organization, neighbors, " +
+              "and the entire infrastructure of a smart apartment complex.",
+      tags: ["UX/UI",  'UX Research', "Figma", "Miro", ]
     }
   ];
 </script>
@@ -322,13 +344,17 @@
     <div class="centered">
       <h1>Xenia Zhukova</h1>
       <h2>
-        <span>Front-end developer</span>
-        <span> & product designer</span>
+        <span>Front-end dev & Product Designer</span>
+        <span> 2+ years of experience</span>
         </h2>
     </div>
     <block>
       <h3>Social</h3>
       <List elements={social} />
+    </block>
+    <block>
+      <h3>Employment history</h3>
+      <WorkExperience {jobs} />
     </block>
     <block>
       <h3>Skills</h3>
@@ -338,10 +364,7 @@
         {/each}
       </ul>
     </block>
-    <block>
-      <h3>Employment history</h3>
-      <WorkExperience {jobs} />
-    </block>
+
     <block>
       <h3>Projects</h3>
       <Projects {projects} />

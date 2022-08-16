@@ -67,10 +67,12 @@
           <Icon type="project" />
           project
         </a>
+        {#if project.github}
         <a target="_blank" class="link" href={project.github}>
           <Icon type="github" />
           code
         </a>
+        {/if}
         {#if project.screenshots}
           <a
             class="link"
